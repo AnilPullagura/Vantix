@@ -1,0 +1,93 @@
+.input-section-container {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 0 16px;
+  z-index: 20;
+}
+
+.action-bar {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.input-glow-1 {
+  position: absolute;
+  top: -96px;
+  left: -96px;
+  width: 192px;
+  height: 192px;
+  background: rgba(99, 102, 241, 0.1);
+  filter: blur(100px);
+}
+
+.input-glow-2 {
+  position: absolute;
+  bottom: -96px;
+  right: -96px;
+  width: 192px;
+  height: 192px;
+  background: rgba(236, 72, 153, 0.1);
+  filter: blur(100px);
+}
+
+.prompt-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  padding: 0 8px;
+}
+
+.prompt-input::placeholder {
+  color: #94a3b8;
+}
+
+.divider {
+  height: 24px;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0 4px;
+}
+
+.icon-button {
+  padding: 12px;
+  border-radius: 16px;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-button:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.05);
+  color: #6366f1;
+}
+
+.icon-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.active-wand {
+  background: rgba(99, 102, 241, 0.2) !important;
+  color: #818cf8 !important;
+}
