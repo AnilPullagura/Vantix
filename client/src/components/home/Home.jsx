@@ -6,7 +6,7 @@ import "./Home.css";
 import { LayoutDashboard, Library, Settings, Sparkles } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://vantix-6ha0.onrender.com/api";
 
 const Home = () => {
   const [input, setInput] = useState("");
