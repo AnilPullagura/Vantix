@@ -22,7 +22,6 @@ const InputSection = ({
           title="Enhance with Groq"
         >
           <Wand2 size={22} className={isEnhancing ? "animate-pulse" : ""} />
-          magic
         </button>
 
         <div className="divider" />
@@ -62,7 +61,7 @@ const InputSection = ({
             <RefreshCw size={18} className="animate-spin" />
           ) : (
             <>
-              <span className="hidden sm:inline">Generate</span>
+              <span className="hidden gen sm:inline"></span>
               <Send size={18} />
             </>
           )}

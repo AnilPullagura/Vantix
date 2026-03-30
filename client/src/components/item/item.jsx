@@ -37,12 +37,10 @@ const Item = ({ msg }) => {
               <img
                 src={msg.imageUrl}
                 alt={msg.prompt}
-                className="w-full ai-media rounded-2xl object-cover"
+                className="ai-media rounded-2xl object-cover"
               />
               <div className="media-overlay">
                 <ActionButton icon={<Download size={20} />} label="Save" />
-                <ActionButton icon={<Copy size={20} />} label="Prompt" />
-                <ActionButton icon={<RefreshCw size={20} />} label="Remix" />
               </div>
             </div>
             <p className="text-xs text-slate-500 text-center px-8 italic font-medium">

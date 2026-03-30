@@ -1,5 +1,6 @@
 .message-item {
   display: flex;
+  justify-content: flex-end;
   margin-bottom: 24px;
   animation: slideUp 0.4s ease-out;
 }
@@ -15,11 +16,34 @@
   }
 }
 
-.ai-message {
-  max-width: 672px;
-  display: flex;
-  gap: 16px;
+@media (min-width: 768px) {
+  .ai-message {
+    max-width: 672px;
+    display: flex;
+    gap: 16px;
+  }
+  .user-message {
+    max-width: 512px;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
 }
+@media (max-width: 768px) {
+  .ai-message {
+    display: flex;
+  }
+  .text-box {
+    overflow-y: auto;
+    max-height: 200px;
+    scroll-behavior: smooth;
+  }
+  .media-item p {
+    overflow-y: auto;
+    max-height: 100px;
+  }
+}
+
 .ai-media {
   height: 300px;
 }
@@ -28,15 +52,8 @@
   padding: 5px;
 }
 
-.user-message {
-  max-width: 512px;
-  margin-left: auto;
-  display: flex;
-  justify-content: flex-end;
-}
-
 .media-item {
-  max-width: 672px;
+  max-width: 572px;
   margin-right: auto;
   margin-top: 12px;
 }
@@ -48,6 +65,9 @@
   border: 1px solid rgba(255, 255, 255, 0.05);
   transition: all 0.3s ease;
   box-shadow: 0 25px 50px -12px rgba(99, 102, 241, 0.1);
+}
+.media-card img {
+  width: 100%;
 }
 
 .media-card:hover {

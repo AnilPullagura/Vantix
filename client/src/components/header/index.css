@@ -1,7 +1,15 @@
-.header-container {
-  display: flex;
-  justify-content: flex-end;
+@media (min-width: 768px) {
+  .header-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  header {
+    padding: 10px;
+  }
 }
-header {
-  padding: 10px;
+
+@media (max-width: 768px) {
+  header {
+    display: none;
+  }
 }
